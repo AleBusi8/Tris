@@ -1,0 +1,40 @@
+﻿<Window x:Class="Busi.Semproli._4H.Tris.Storico"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Busi.Semproli._4H.Tris"
+        mc:Ignorable="d"
+        Title="Storico" Height="500" Width="500" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"></RowDefinition>
+            <RowDefinition Height="1.5*"></RowDefinition>
+            <RowDefinition Height="1.5*"></RowDefinition>
+            <RowDefinition Height="1.5*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="home.jpg" Grid.RowSpan="4" Grid.ColumnSpan="4" Stretch="Fill"></Image>
+
+        <Label Grid.Row="0" Grid.Column="0" Margin="15" HorizontalContentAlignment="Center" Content="STORICO" Foreground="White" VerticalContentAlignment="Center" FontFamily="comic sans ms" FontSize="35" FontStyle="Oblique" FontWeight="Bold"></Label>
+        <Label Grid.Row="0" Grid.Column="1" Margin="15" HorizontalContentAlignment="Center" Content="WIN" Foreground="White" VerticalContentAlignment="Center" FontSize="25" FontFamily="comic sans ms" FontWeight="Bold"></Label>
+        <Label Grid.Row="0" Grid.Column="2" Margin="15" HorizontalContentAlignment="Center" Foreground="White" Content="DRAW" VerticalContentAlignment="Center" FontSize="25" FontFamily="comic sans ms" FontWeight="Bold"></Label>
+
+        <Label Grid.Row="1" Grid.Column="0" Margin="15" HorizontalContentAlignment="Center" Content="GIOCATORE 1" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="25" FontFamily="comic sans ms" Foreground="White"></Label>
+        <Label x:Name="w1" Grid.Row="1" Grid.Column="1" Margin="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontSize="50" FontStyle="Oblique" FontWeight="Bold"></Label>
+
+        <Label x:Name="draw" Grid.Row="1" Grid.RowSpan="2" Grid.Column="2" Foreground="White" Margin="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="50" FontStyle="Oblique" FontWeight="Bold"></Label>
+
+        <Label Grid.Row="2" Grid.Column="0" Margin="15" HorizontalContentAlignment="Center" Content="GIOCATORE 2" Foreground="White" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="25" FontFamily="comic sans ms"></Label>
+        <Label x:Name="w2" Grid.Row="2" Grid.Column="1" Margin="15" HorizontalContentAlignment="Center" Foreground="White" VerticalContentAlignment="Center" FontSize="50" FontStyle="Oblique" FontWeight="bold"></Label>
+
+        <Button Grid.Row="3" x:Name="Azz_btn" Click="Azz_btn_Click" Grid.ColumnSpan="2" Margin="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="35" Background="Transparent" Foreground="White" FontFamily="comic sans ms"> AZZERA STORICO</Button>
+        <Button x:Name="Esc_btn" Click="Esc_btn_Click" Grid.Row="3" Grid.Column="3" Margin="15" FontFamily="comic sans ms" FontSize="30" Background="Transparent" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">ESCI</Button>
+    </Grid>
+</Window>
